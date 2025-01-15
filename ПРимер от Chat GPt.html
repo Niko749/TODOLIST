@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание элемента</title>
+    <style>
+        #container {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="createButton">Создать элемент</button>
+    <div id="container"></div>
+
+    <script>
+      const button = document.getElementById('createButton');
+      const container = document.getElementById('container');
+
+// Добавляем обработчик события для кнопки
+        button.addEventListener('click', () => {
+    // Создаем новый элемент (например, div)
+    const newElement = document.createElement('div');
+    newElement.textContent = 'Это новый элемент!';
+    newElement.style.padding = '5px';
+    newElement.style.border = '1px solid #000';
+    newElement.style.margin = '5px 0';
+
+    // Добавляем созданный элемент в контейнер
+    container.appendChild(newElement);
+});
+    </script>
+</body>
+</html>

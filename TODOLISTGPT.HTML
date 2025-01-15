@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List с описанием заметки</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="container">
+        <div class="leftmenu">
+            <div id="list"> Заметки:
+                <div class="point" id="note">
+                    <span class="name">
+                        <input type="text">
+                    </span>
+                    <button class="edit">
+                        <img src="pen.png" class="pen_png" alt="">    
+                    </button>
+                    <button class="delete" onclick="removeNote()">
+                        <img src="delete.png" alt="" class="basket">
+                    </button>
+                </div>
+                
+            </div>
+            <button class="add" onclick="addNote()" id="add">
+                Add
+            </button>
+        </div>
+        <div class="rightmenu">
+            <textarea name="details_task" id="#"></textarea>
+        </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
